@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+<title>Africa</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            font-family: "Playwrite GB S", serif;
+        }
+        header {
+            background-color: #5e70d4;
+            color: #000000;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            padding: 20px;
+        }
+        .place {
+            background-color: white;
+            border-radius: 8px;
+            margin: 20px 0;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .place img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .place-info {
+            margin-top: 15px;
+        }
+        .place-info h2 {
+            margin: 10px 0;
+        }
+        button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #5e70d4;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome To Africa:Explore Egypt</h1>
+        <p>Egypt offers a unique blend of history, culture, natural beauty, and warm hospitality, making it an exceptional travel destination!</p>
+    </header>
+
+    <div class="container">
+        <!-- Place 1 -->
+        <div class="place">
+            <img src="C:\Users\Sayed\Desktop\triangle" alt="The Great Pyramids of Giza">
+            <div class="place-info">
+                <h2>The Great Pyramids of Giza</h2>
+                <p>One of the Seven Wonders of the Ancient World, the Great Pyramids are a must-see attraction in Egypt.</p>
+                <button onclick="showMoreInfo('giza')">Learn More</button>
+                <p id="giza" style="display: none;">The Great Pyramids are located near Cairo and were built as tombs for the ancient pharaohs. The largest pyramid, the Great Pyramid of Khufu, stands at 146 meters tall.</p>
+            </div>
+        </div>
+
+        <!-- Place 2 -->
+        <div class="place">
+            <img src="C:\Users\Sayed\Desktop\luxor-travel-guide,-information-about-luxor,-egypt.jpg" alt="Luxor Temple">
+            <div class="place-info">
+                <h2>Luxor Temple</h2>
+                <p>A stunning temple complex that showcases the grandeur of ancient Egyptian architecture and history.</p>
+                <button onclick="showMoreInfo('luxor')">Learn More</button>
+                <p id="luxor" style="display: none;">Luxor Temple is located in Luxor, on the east bank of the Nile River. Built around 1400 BCE, it was dedicated to the Theban Triad of Amun, Mut, and Khonsu.</p>
+            </div>
+        </div>
+
+        <!-- Place 3 -->
+        <div class="place">
+            <img src="C:\Users\Sayed\Desktop\15-great-temple.avif" alt="Abu Simbel Temples">
+            <div class="place-info">
+                <h2>Abu Simbel Temples</h2>
+                <p>These two massive rock temples are an iconic symbol of ancient Egypt's grandeur and ingenuity.</p>
+                <button onclick="showMoreInfo('abu-simbel')">Learn More</button>
+                <p id="abu-simbel" style="display: none;">Located in southern Egypt near the Sudanese border, the Abu Simbel Temples were built by Ramses II to commemorate his victory at the Battle of Kadesh.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showMoreInfo(placeId) {
+            var info = document.getElementById(placeId);
+            if (info.style.display === "none") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
